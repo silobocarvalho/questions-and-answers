@@ -1,0 +1,38 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <hr>
+        <% if (locals.question){ %>
+        <h1><%= question.title %></h1>
+        <h6><%= question.description %></h1>
+            <p class='question-date'>Updated at: <%= question.updatedAt.toUTCString() %></p>
+            <p class='question-date'>Created at: <%= question.createdAt.toUTCString() %></p>
+
+            <form action="/saveanswer" method="POST">
+                <input type="hidden" name='questionId' value='<%= question.id %>'>
+                <h3 class='mt-2'>Your answer</h3>
+                <textarea class='form-control mt-3' name="answercontent" id="" cols="30" rows="6"
+                    placeholder="Type your answer here..."></textarea>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+            <hr>
+            <h3>Answers</h3>
+            <hr>
+            <% if (answers.length > 0){ %>
+            <% answers.forEach(answer => { %>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <%= answer.content %>
+                </div>
+            </div>
+            <% }) }else{ %>
+            <label class="alert alert-danger">No answers, sorry.</label>
+            <% } } %>
+            <br> <br>
+    </div>
+
+</body>
+<%- include ('partials/footer.ejs') %>
