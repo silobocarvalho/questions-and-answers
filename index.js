@@ -25,7 +25,7 @@ connectionDB.authenticate().then(() => {
 //Database configuration - END
 
 //Variables definition - BEGIN
-const serverPortNumber = 5555
+const serverPortNumber = process.env.PORT || 5555
 //Variables definition - END
 
 //Routes - BEGIN

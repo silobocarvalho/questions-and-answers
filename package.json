@@ -1,0 +1,28 @@
+{
+  "name": "questions_and_answers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silobocarvalho/questions-and-answers.git"
+  },
+  "author": "Sidartha Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silobocarvalho/questions-and-answers/issues"
+  },
+  "homepage": "https://github.com/silobocarvalho/questions-and-answers#readme"
+}
