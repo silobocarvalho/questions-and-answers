@@ -1,7 +1,7 @@
 {
   "name": "questions_and_answers",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project allows users to ask and answer questions about everything. This system is running at https://questions-and-answers-salc.herokuapp.com/ with open code at Github.\r This project uses:\r - NodeJS\r - EJS (Embedded JavaScript) templates lib\r - Express lib\r - Body-parser lib\r - Sequelize lib\r - Remote MySQL Server\r - Bootstrap libs\r - Git repository\r - Heroku hosting",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
