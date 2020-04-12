@@ -9,6 +9,7 @@ This project uses:
 - Body-parser lib
 - Sequelize lib
 - Remote MySQL Server
+- Bootstrap libs
 - Git repository
 - Heroku hosting
 
